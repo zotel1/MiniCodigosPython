@@ -46,6 +46,8 @@ def numeroAPalabras(numero):
 
     elif en_palabras.endswith('veinti'):
         en_palabras = en_palabras.replace('veinti', 'veinte')
+    elif en_palabras.endswith(' y'):
+        en_palabras = en_palabras[:-2]
     return en_palabras.capitalize()
 
 
