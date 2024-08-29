@@ -48,10 +48,12 @@ def numeroAPalabras(numero):
         en_palabras = en_palabras.replace('veinti', 'veinte')
     elif en_palabras.endswith(' y'):
         en_palabras = en_palabras[:-2]
+    elif en_palabras.endswith('ciento'):
+        en_palabras = en_palabras.replace('ciento', 'cien')
     return en_palabras.capitalize()
 
 
 # Programa principal
 # Ejemplo 379 se escribe: Tresciento setenta y nueve
-valor = 670
+valor = 100
 print(numeroAPalabras(valor)) # >>> Trescientos setenta y nueve
