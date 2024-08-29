@@ -13,6 +13,9 @@ def numeroAPalabras(numero):
     str: representación en palabras de número
     """
 
-    
+
 
 # Programa principal
+# Ejemplo 379 se escribe: Tresciento setenta y nueve
+valor = 379
+print(numeroAPalabras(valor)) # >>> Trescientos setenta y nueve
