@@ -36,10 +36,20 @@ def numeroAPalabras(numero):
 
     # Encargandose de casos especiales
     en_palabras = en_palabras.replace('dieciuno', 'once')
+    en_palabras = en_palabras.replace('diecidos', 'doce')
+    en_palabras = en_palabras.replace('diecitres', 'trece')
+    en_palabras = en_palabras.replace('diecicuatro', 'catorce')
+    en_palabras = en_palabras.replace('diecicinco', 'quince')
+
+    if en_palabras.endswith('dieci'):
+        en_palabras = en_palabras.replace('dieci', 'diez')
+
+    elif en_palabras.endswith('veinti'):
+        en_palabras = en_palabras.replace('veinti', 'veinte')
     return en_palabras.capitalize()
 
 
 # Programa principal
 # Ejemplo 379 se escribe: Tresciento setenta y nueve
-valor = 318
+valor = 670
 print(numeroAPalabras(valor)) # >>> Trescientos setenta y nueve
