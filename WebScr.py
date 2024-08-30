@@ -18,3 +18,15 @@ for i in sin_duplicados:
     nombre_maquinas = i.replace("/entry/", "")
     maquinas_final.append(nombre_maquinas)
     print(nombre_maquinas)
+
+maquina_noob = "noob-1"
+existe_noob = False
+
+for a in maquinas_final:
+    if a == maquina_noob:
+        existe_noob = True
+        break
+if existe_noob == True:
+    print("No hay ninguna máquina nueva")
+else:
+    print("Máquina nueva!!")
