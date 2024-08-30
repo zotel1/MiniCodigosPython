@@ -2,7 +2,7 @@
 
 # Funciones
 
-#valorNumerico = input(int(f'introduce un numero: '))
+ingresarValor = int(input('introduce un numero: '))
 
 def numeroAPalabras(numero):
     """
@@ -55,5 +55,5 @@ def numeroAPalabras(numero):
 
 # Programa principal
 # Ejemplo 379 se escribe: Tresciento setenta y nueve
-valor = 100
-print(numeroAPalabras(valor)) # >>> Trescientos setenta y nueve
+valor = ingresarValor
+print(f"El número {ingresarValor} se escribe como: {numeroAPalabras(valor)}") # >>> Trescientos setenta y nueve
