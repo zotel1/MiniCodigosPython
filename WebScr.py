@@ -10,3 +10,5 @@ content = resultado.text
 
 patron = r"/entry/[\w-]*"
 maquinas_repetidas = re.findall(patron, str(content))
+sin_duplicados = list(set(maquinas_repetidas))
+
