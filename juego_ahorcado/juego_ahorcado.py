@@ -1,8 +1,11 @@
 import random
+import os
 
 def run():
     # El jugador 1 ingresa la palabra secreta
     palabra = input("Jugador 1, ingresa una palabra: ").lower()
+    # Limpiar la pantalla
+    os.system('cls' if os.name == 'nt' else 'clear')
     return palabra
 
 palabra = run()
